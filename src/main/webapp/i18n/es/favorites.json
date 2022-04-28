@@ -1,0 +1,23 @@
+{
+  "flickr2App": {
+    "favorites": {
+      "home": {
+        "title": "Favorites",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Favorites",
+        "createOrEditLabel": "Crear o editar Favorites",
+        "notFound": "Ningún Favorites encontrado"
+      },
+      "created": "Un nuevo Favorites ha sido creado con el identificador {{ param }}",
+      "updated": "Un Favorites ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Favorites ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Favorites {{ id }}?"
+      },
+      "detail": {
+        "title": "Favorites"
+      },
+      "id": "ID"
+    }
+  }
+}

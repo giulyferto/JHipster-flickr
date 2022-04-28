@@ -2,6 +2,10 @@ import React from 'react';
 import { Switch } from 'react-router-dom';
 import ErrorBoundaryRoute from 'app/shared/error/error-boundary-route';
 
+import Album from './album';
+import Photo from './photo';
+import Tag from './tag';
+import Favorites from './favorites';
 /* jhipster-needle-add-route-import - JHipster will add routes here */
 
 export default ({ match }) => {
@@ -9,6 +13,10 @@ export default ({ match }) => {
     <div>
       <Switch>
         {/* prettier-ignore */}
+        <ErrorBoundaryRoute path={`${match.url}album`} component={Album} />
+        <ErrorBoundaryRoute path={`${match.url}photo`} component={Photo} />
+        <ErrorBoundaryRoute path={`${match.url}tag`} component={Tag} />
+        <ErrorBoundaryRoute path={`${match.url}favorites`} component={Favorites} />
         {/* jhipster-needle-add-route-path - JHipster will add routes here */}
       </Switch>
     </div>

@@ -104,6 +104,7 @@ public final class SecurityUtils {
         return mapRolesToGrantedAuthorities(getRolesFromClaims(claims));
     }
 
+
     @SuppressWarnings("unchecked")
     private static Collection<String> getRolesFromClaims(Map<String, Object> claims) {
         return (Collection<String>) claims.getOrDefault(
